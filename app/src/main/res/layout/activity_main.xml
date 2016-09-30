@@ -16,7 +16,7 @@
             android:id="@+id/btn_line_to_internet"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="加载网络"/>
+            android:text="Test Network"/>
 
     </RelativeLayout>
 

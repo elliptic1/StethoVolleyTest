@@ -1,4 +1,4 @@
-package com.zhangshan.guibai.stethovolleytest;
+package com.tbse.stethovolleytest;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

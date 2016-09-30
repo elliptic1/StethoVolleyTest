@@ -1,7 +1,6 @@
-package com.zhangshan.guibai.stethovolleytest;
+package com.tbse.stethovolleytest;
 
 import android.app.Application;
-import android.content.Context;
 
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.Volley;
@@ -46,7 +45,7 @@ public class MyApplication extends Application {
                 OkHttpClient client = new OkHttpClient();
                 client.networkInterceptors().add(new StethoInterceptor());
                 mRequestQueue = Volley.newRequestQueue(getApplicationContext(), new
-                 OkHttpStack(client));
+                        OkHttpStack(client));
             }
         return mRequestQueue;
     }

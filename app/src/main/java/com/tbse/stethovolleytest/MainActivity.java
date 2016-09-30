@@ -1,8 +1,7 @@
-package com.zhangshan.guibai.stethovolleytest;
+package com.tbse.stethovolleytest;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -12,7 +11,6 @@ import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
-import com.android.volley.toolbox.Volley;
 import com.facebook.stetho.common.LogUtil;
 
 public class MainActivity extends AppCompatActivity {
@@ -48,17 +46,14 @@ public class MainActivity extends AppCompatActivity {
 
         queue.add(request);
 
-        //SharedPrfUtil.setInt("uid",669);
-        //SharedPrfUtil.setString("username","dongye");
-
     }
 
     private void initButton() {
         btn_line_to_internet.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                LogUtil.d("去加载网络了");
-                tv.setText(" ");
+                LogUtil.d("Test Network Call");
+                tv.setText("Test Network Call");
                 initData();
             }
         });
